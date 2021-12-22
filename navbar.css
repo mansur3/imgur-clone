@@ -1,0 +1,251 @@
+.container {
+    width: 100%;
+    height: 400px;
+    background-image : url("https://thumbs.gfycat.com/HelpfulRegalAustraliancattledog-size_restricted.gif");
+    background-repeat : no-repeat;
+    background-size: cover;
+}
+
+.navbar-container {
+    width: 100%;
+    height: 100px;
+    border : 1px solid black;
+    display: flex;
+}
+
+.navbar-container-left, .navbar-middle {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+}
+.newpost {
+    margin-left: 20px;
+    width: 130px;
+    height: 40px;
+    background-color : rgb(88, 235, 88); 
+    color : white;
+    font-weight: bold;
+    align-items : center;
+    display: flex;
+    border-radius: 6px;
+
+}
+.newpost>div>p,.newpost>div>img {
+    margin-left: 10px;
+}
+.navbar-middle >div > input {
+    width: 400px;
+    height: 30px;
+    background-color: rgb(202, 197, 197);
+    color : white;
+    font-size: 20px;
+    float: left;
+    outline : none;
+
+
+    /* height: 200px; */
+}
+.navbar-middle>div>div {
+float : left;
+color : white;
+background-color:rgb(202, 197, 197);
+font-size: 20px;
+height: 30px;
+border : 1px solid black;
+}
+
+.adfree {
+    margin-left : 300px;
+    color : white;
+}
+.ad {
+    color : white;
+    
+}
+
+.tagline {
+    text-align : center;
+    font-size : 30px;
+    color : white;
+    font-weight: bolder;
+}
+.exploreContainer {
+    width: 1000px;
+    /* border : 2px solid black; */
+    margin : auto;
+    height: 173px;
+}
+.exploretop {
+    width: 100%;
+    height: 20px;
+
+}
+.exploretag {
+    float : left;
+    font-size: 14px;
+    font-weight: bold;
+    color : white;
+
+
+}
+.moretag {
+    float : right;
+    font-size: 14px;
+    font-weight: bold;
+    color : white;
+}
+
+.showtag {
+    clear : both;
+    width: 100%;
+    display: grid;
+    grid-gap: 10px;
+    margin-top: 10px;
+    grid-template-columns: 22% 12% 12% 12% 12% 12% 12%;
+
+}
+.showtag > div {
+    border-radius: 20px;
+}
+.boardimg {
+    width: 100%;
+    height: 50%;
+}
+.innerboard {
+    background-color : #01b96b;
+    color : white;
+    text-align: center;
+    margin-top: -25px; 
+}
+.year {
+    background-color : #13ab81;
+    color : white;
+    text-align: center;
+    margin-top: -25px; 
+    
+}
+
+.santa {
+    background-color : rgb(170, 51, 230);
+    color : white;
+    text-align: center;
+    margin-top: -25px; 
+}
+.bacon {
+    background-color : rgb(80, 83, 90);
+    color : white;
+    text-align: center;
+    margin-top: -25px; 
+}
+
+.inspire {
+    background-color : #70d46e;
+    color : white;
+    text-align: center;
+    margin-top: -25px; 
+}
+
+.showtag > div> div> p {
+    padding-bottom: 8px;
+    margin-top: -10px;
+}
+.showtag > div > img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+.showtag > div > div {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+.profile {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    color: white;
+    background-color:rgb(178, 187, 156);
+    text-align: center;
+    margin-top: 20px;
+    padding: 14px;
+
+
+}
+
+.filtercontainer {
+    width: 70%;
+    /* height: 100px; */
+    /* border : 1px solid black; */
+    margin : auto;
+    padding: 20px;
+    display: flex;
+}
+
+
+
+
+
+
+/* dropdown */
+
+
+
+.dropbtn {
+    /* background-color: #4CAF50; */
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    /* float: left; */
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+      clear: both;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+
+  .dropdown:hover .dropbtn {
+    /* background-color: #3e8e41; */
+  }
+
+  .droparrow {
+      float : left;
+      cursor: pointer;
+      width: 20px;
+      height: 20px;
+      margin-top: 30px;
+  }
+  .dropcheck {
+      display: flex;
+  }
+
+  .right{
+      margin-left: 300px;
+      display: flex;
+        align-content : space-between;  
+  } 
