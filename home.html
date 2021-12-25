@@ -228,38 +228,42 @@
         </div>
     </body>
     <script>
-        function main() {
+        async function main() {
             // var data = {
             //     image : "./image/first.jpeg",
             //     name : "All of these are true. Barney is truly-wait for it - legendary!",
             //     comment : 12,
             //     seen : 4000,
             //     react : 141
-            // }
+            // }\
 
-            var d = [
-            {
-                image : "./image/first.jpeg",
-                name : "All of these are true. Barney is truly-wait for it - legendary!",
-                comment : 12,
-                seen : 4000,
-                react : 141
-            }, 
-            {
-                image : "./image/first.jpeg",
-                name : "All of these are true. Barney is truly-wait for it - legendary!",
-                comment : 12,
-                seen : 4000,
-                react : 141
-            }, 
-            {
-                image : "./image/first.jpeg",
-                name : "All of these are true. Barney is truly-wait for it - legendary!",
-                comment : 12,
-                seen : 4000,
-                react : 141
-            }
-            ]
+            let da = await fetch("https://api.unsplash.com/photos/?client_id=1iS5UEDizFlO1Q9ajaXW07OS87E9qpnpaI6wMXjdvQ8");
+            let d = await da.json();
+            console.log(d);
+
+            // var d = [
+            // {
+            //     image : "./image/first.jpeg",
+            //     name : "All of these are true. Barney is truly-wait for it - legendary!",
+            //     comment : 12,
+            //     seen : 4000,
+            //     react : 141
+            // }, 
+            // {
+            //     image : "./image/first.jpeg",
+            //     name : "All of these are true. Barney is truly-wait for it - legendary!",
+            //     comment : 12,
+            //     seen : 4000,
+            //     react : 141
+            // }, 
+            // {
+            //     image : "./image/first.jpeg",
+            //     name : "All of these are true. Barney is truly-wait for it - legendary!",
+            //     comment : 12,
+            //     seen : 4000,
+            //     react : 141
+            // }
+            // ]
 
 
 
@@ -271,7 +275,7 @@
             var image_div = document.createElement("div");
             image_div.id = "image_div"
             var image = document.createElement("img");
-            image.src = data.image;
+            image.src = data.urls.thumb;
             image.id = "image";
             image_div.appendChild(image);
 
@@ -281,7 +285,7 @@
 
             var title = document.createElement("div");
             title.id = "title";
-            title.innerHTML = data.name;
+            title.innerHTML = "Nice to see you";
 
 
             var feedback_div = document.createElement("div");
@@ -293,7 +297,7 @@
             top_arrow.id = "top_arrow";
 
             var reacta = document.createElement("span");
-            reacta.innerHTML = data.react;
+            reacta.innerHTML = data.likes;
 
 
 
@@ -311,7 +315,7 @@
             comment_img.id = "commment_img";
 
             var commenta = document.createElement("div");
-            commenta.innerHTML = data.comment;
+            commenta.innerHTML = 10;
             commenta.id = "commenta"
             comment_div.append(comment_img, commenta);
 
@@ -323,7 +327,7 @@
             view_image.id = "view_image";
 
             var viewa = document.createElement("div");
-            viewa.innerHTML = data.seen;
+            viewa.innerHTML = 1024;
             viewa.id = "viewa";
 
             seen_div.append(view_image, viewa);
